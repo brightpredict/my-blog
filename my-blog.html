@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Muelesia - Developer Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2d3e50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .profile img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .profile-desc {
+      flex: 1;
+    }
+    .profile-desc h2 {
+      margin-bottom: 1rem;
+    }
+    .skills {
+      margin-top: 1rem;
+    }
+    .skills span {
+      background: #2d3e50;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      margin-right: 0.5rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    
+    .projects {
+      margin-bottom: 3rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .project-card h4 {
+      margin-top: 0.5rem;
+      color: #2d3e50;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card a:hover h4 {
+      color: #007acc;
+    }
+
+    
+    .contact {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+    .contact a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2d3e50;
+      color: white;
+      margin-top: 3rem;
+    }
+    @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle hover scaling */
+.project-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.profile img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Michael Muelesia</h1>
+  <p>Junior Developer | Frontend Enthusiast | Open to Jobs & Clients</p>
+</header>
+
+<div class="container">
+
+
+  <section class="profile reveal">
+    <img src="blog.JPG" alt="Michael's Photo" />
+    <div class="profile-desc">
+      <h2>About Me</h2>
+      <p>I’ve just completed my first year at university, where I'm pursuing a degree in software development. I’m passionate about building practical web applications and learning real-world problem-solving. As I grow my skills, I’m currently seeking a small job, internship, or freelance project over the long holiday to gain hands-on experience and work closely with real teams or clients.</p>
+      <p>I am a passionate junior developer with a strong foundation in modern web technologies. I specialize in building responsive, interactive, and clean user interfaces using HTML, CSS, and JavaScript. I can work with Git, GitHub, and Node.js, and I use EmailJS for seamless form handling.</p>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>EmailJS</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects reveal>
+    <h2 style="margin-bottom: 1rem;">My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h4>ONLINE STORE</h4>
+          <p>Built with HTML, CSS, JavaScript.</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://brightpredict.github.io/forexhub/" target="_blank">
+          <h4>An online class website with registration and login page"></form></h4>
+          <p>HTML,CSS,EmailJS and JavaScript</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://brightpredict.github.io/mvumilivu/" target="_blank">
+          <h4>Mvumilivu hotel menu</h4>
+          <p>Bult with HTML and css for styling</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href=" https://brightpredict.github.io/listen-write/" target="_blank">
+          <h4>Transcription practice</h4>
+          <p>HTML,CSS,Javascript</p>
+        </a>
+      </div>
+    
+    
+    
+    </div>
+  </section>
+  
+  <section class="contact reveal">
+    <h2>Contact Me</h2>
+    <p>You can reach me via:</p>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+      <li>
+        📱 <a href="https://wa.me/254742487526" target="_blank">WhatsApp: 0742487526</a>
+      </li>
+      <li>
+        📧 <a href="mailto:muelesiamichael4@gmail.com">Email: muelesiamichael4@gmail.com</a>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Michael Muelesia. All rights reserved.
+</footer>
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  reveals.forEach((section) => {
+    revealObserver.observe(section);
+  });
+</script>
+
+</body>
+</html>
